@@ -32,7 +32,6 @@ tweet_list = api.search(
 for tweet in tweet_list:
     screen_name = tweet.user.screen_name
 
-    # string format, {} will be delimited  
     message = '@{username} {message}'.format(
         username = screen_name,
         message = 'cold winter'

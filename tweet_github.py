@@ -45,4 +45,10 @@ for tweet in tweet_list:
         print message
     except tweepy.TweepError as e:
         print e.message
-        #when we want to each more keywords/prase in one time #
+
+# when we want to each more keywords/prase in one time #
+
+query_list=(
+    ('"what you want to search"', 'what you want to reweet', 'maybe add a image.png'),
+    ('"yolo"', 'nice try!')
+)          

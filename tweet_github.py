@@ -45,3 +45,4 @@ for tweet in tweet_list:
         print message
     except tweepy.TweepError as e:
         print e.message
+        #when we want to each more keywords/prase in one time #

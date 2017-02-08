@@ -50,5 +50,5 @@ for tweet in tweet_list:
 
 query_list=(
     ('"what you want to search"', 'what you want to reweet', 'maybe add a image.png'),
-    ('"yolo"', 'nice try!')
+    ('"yolo"', 'nice try!','maybe add a image.png')
 )          

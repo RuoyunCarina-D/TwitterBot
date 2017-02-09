@@ -51,10 +51,9 @@ for tweet in tweet_list:
 query_list=(
     ('"what you want to search"', 'what you want to reweet', 'maybe add a image.png'),
     ('"yolo"', 'nice try!','maybe add a image.png')
+    
 )          
 
-''' 
-I am still working on the following, sorry:
 for q in query_list:
     query = q[0]
 
@@ -65,7 +64,7 @@ for q in query_list:
     for tweet in tweet_list:
         screen_name = tweet.user.screen_name
 
-        # ??? avoid retweets
+        #avoid retweets
         if (
             hasattr(tweet, 'retweeted_status') or
             'RT @' in tweet.text or

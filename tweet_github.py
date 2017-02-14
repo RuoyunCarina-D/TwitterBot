@@ -49,8 +49,9 @@ for tweet in tweet_list:
 # when we want to each more keywords/prase in one time #
 
 query_list=(
-    ('"what you want to search"', 'what you want to reweet', 'maybe add a image.png'),
-    ('"yolo"', 'nice try!','maybe add a image.png')
+    ('"whasearcht you want to "', 'what you want to reweet', 'maybe add a image.png'),
+    ('"yolo"', 'nice try!','maybe add a image.png'),
+    ('"linux command"', 'some advice', 'linux.png')
     
 )          
 

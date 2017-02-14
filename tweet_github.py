@@ -59,8 +59,6 @@ for q in query_list:
 
     tweet_list = api.search(q=query, count=20, lang="en")
 
-    tweets_answered = 0
-
     for tweet in tweet_list:
         screen_name = tweet.user.screen_name
 
@@ -70,14 +68,14 @@ for q in query_list:
             'RT @' in tweet.text or
             api.me().screen_name == screen_name
         ):
-            print "this is a retweet, let's try with the next one"
+            print "this is a retweet, try with the next one"
 
         else:
             message = ".@{username} {message}".format(
                 username=screen_name,
-                message=alot[1]
+                message=query_list[1]
             )
-            image_path = "media/{image_name}".format(image_name=alot[2])
+            image_path = "media/{image_name}".format(image_name=query_list[2])
 
             # if the tweet is a duplicate an exception is raised
             try:

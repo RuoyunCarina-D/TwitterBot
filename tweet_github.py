@@ -46,7 +46,7 @@ for tweet in tweet_list:
     except tweepy.TweepError as e:
         print e.message
 
-# when we want to each more keywords/prase in one time #
+#if we want to retweet with different sentence for more keywords/prase in one time
 
 query_list=(
     ('"whasearcht you want to "', 'what you want to reweet', 'maybe add a image.png'),

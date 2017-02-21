@@ -76,6 +76,7 @@ for q in query_list:
                 username=screen_name,
                 message=query_list[1]
             )
+            #??? how to retweet if there is no image
             image_path = "media/{image_name}".format(image_name=query_list[2])
 
             # if the tweet is a duplicate an exception is raised
